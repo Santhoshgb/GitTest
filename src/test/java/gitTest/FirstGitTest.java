@@ -24,5 +24,6 @@ public class FirstGitTest {
 		
 		File src = ((TakesScreenshot)wd).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(src, new File("C:\\workspace\\GitTest\\Screenshot\\screenshot.jpg"));
+	
 	}
 }

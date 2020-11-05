@@ -10,9 +10,13 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+
+import com.google.common.annotations.VisibleForTesting;
 
 public class FirstGitTest {
 
+	@Test
 	public void logintest() throws IOException {
 		
 		WebDriver wd = new FirefoxDriver();
@@ -24,6 +28,8 @@ public class FirstGitTest {
 		
 		File src = ((TakesScreenshot)wd).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(src, new File("C:\\workspace\\GitTest\\Screenshot\\screenshot.jpg"));
-	
+		
+		int i=1/0;
+		
 	}
 }
